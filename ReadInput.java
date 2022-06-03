@@ -3,10 +3,12 @@ import java.util.stream.Collectors;
 
 public class ReadInput {
 
-    String tempB = "";
-    String tempA = "";
+    String tempB;
+    String tempA;
+    int a;
+    int b;
 
-    public void inputReader() throws Exception {
+    public int inputReader(String variable) throws Exception {
 
         BufferedReader br = new BufferedReader(new FileReader("input.txt"));
         String str;
@@ -34,18 +36,23 @@ public class ReadInput {
         }
         br.close();
 
+        if (variable == "a"){
+            return a = Integer.parseInt(tempA);
+        }else {
+            return b = Integer.parseInt(tempB);
+        }
     }
 
-    public int numA() {
+    // public int numA() {
 
-        int a = Integer.parseInt(tempA);
-        return a;
-    }
+    //     int a = Integer.parseInt(tempA);
+    //     return a;
+    // }
 
-    public int numB() {
+    // public int numB() {
 
-        int b = Integer.parseInt(tempB);
-        return b;
-    }
+    //     int b = Integer.parseInt(tempB);
+    //     return b;
+    // }
 
 }
