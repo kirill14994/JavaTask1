@@ -43,16 +43,4 @@ public class ReadInput {
         }
     }
 
-    // public int numA() {
-
-    //     int a = Integer.parseInt(tempA);
-    //     return a;
-    // }
-
-    // public int numB() {
-
-    //     int b = Integer.parseInt(tempB);
-    //     return b;
-    // }
-
 }
